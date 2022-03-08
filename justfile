@@ -1,1 +1,19 @@
 This is just text
+
+server {
+
+    server_name ip.your.vm.xx;
+
+    access_log /var/log/nginx_access.log;
+
+    error_log /var/log/nginx_error.log;
+
+    root /var/www;
+
+    location / {
+
+                index  index.html index.htm index.php;
+
+    }
+
+}
